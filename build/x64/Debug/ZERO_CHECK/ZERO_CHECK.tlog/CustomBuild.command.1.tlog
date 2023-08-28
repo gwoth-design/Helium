@@ -1,0 +1,10 @@
+^D:\PROGRAMMING\COMPILER\HELIUM\BUILD\CMAKEFILES\65137E0E07322145F80BF17728344882\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Programming/Compiler/Helium -BD:/Programming/Compiler/Helium/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Programming/Compiler/Helium/build/helium.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

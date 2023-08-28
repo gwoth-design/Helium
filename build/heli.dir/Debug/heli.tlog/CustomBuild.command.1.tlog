@@ -1,0 +1,10 @@
+^D:\PROGRAMMING\COMPILER\HELIUM\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Programming/Compiler/Helium -BD:/Programming/Compiler/Helium/build --check-stamp-file D:/Programming/Compiler/Helium/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
